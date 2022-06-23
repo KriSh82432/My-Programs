@@ -1,7 +1,7 @@
 class PartyAnimal:
     num = 2
     def __init__(self):
-        print('It is constructed...')
+        print('It is constructet at', self.num)
     def party(stuff):
         stuff.num = stuff.num + 3
         print('So far',stuff.num)
