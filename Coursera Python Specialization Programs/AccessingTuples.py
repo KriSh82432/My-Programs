@@ -38,9 +38,10 @@ print(tups)
 
 # Comparison of tuples
 
-if (1, 4, 6) < (0, 8, 9):
+if (1, 4, 6) < (3, 0, 0):
     print('True')
-
+else:
+    print("False")
 if ('Krishna', 'Elan') < ('Krishna', 'Elanthiraivel'):
     print('True')
 else:
@@ -64,7 +65,7 @@ lst = list()
 
 for key,val in box.items():
     lst.append((val,key))
-    lst = sorted(lst, reverse=True)
+    lst = sorted(lst, reverse=False)
 print(lst)
 
 lst = sorted(lst, reverse=True)
