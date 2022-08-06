@@ -26,11 +26,11 @@ function findAverage() {
   if (grades.length > 0) {
     var num = 0;
     for (let index = 0; index < grades.length; index++) {
-        num = num + grades[index];
+      num = num + grades[index];
     }
     average = num / grades.length;
     document.getElementById("ave").innerHTML = "The average is " + average;
-}
+  }
 }
 
 function clearArray() {

@@ -4,6 +4,7 @@
 def pause():
     pauseProgram = input('Press any key to close...')
 
+
 print("Enter a line:")
 line = input('')
 counts = dict()
