@@ -30,3 +30,6 @@ for i in range(len(name)):
     print("Happy New Year", n)
     
 pause()
+
+names = [ 2, 's']
+print(names)

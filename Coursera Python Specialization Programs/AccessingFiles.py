@@ -16,8 +16,9 @@ def msg(senders):
    msg = input('Do you want to see the senders name? (y/n)')
    if msg == 'y':
     print(senders)
+    print(count,"persons have sent you messages")
    elif msg == 'n':
-    print(senders)
+    print(count,"persons have sent you messages")
 
 file = input('Enter the file name: ')
 count = 0 
@@ -35,8 +36,7 @@ for letter in fhand:
        senders = letter.split()
        senders = senders[1]
 
-       
 msg(senders)
-print(count,"persons have sent you messages")
+
 
 pause()

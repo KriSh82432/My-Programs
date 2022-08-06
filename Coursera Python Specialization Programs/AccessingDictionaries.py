@@ -10,7 +10,7 @@ print(purse)
 total = ( purse['100"s'] * 100)+ (purse['2000"s'] * 2000)+ (purse['500"s'] * 500)
 print(total)
 
-series = { 'GoT' : 9.4 , 'BB' : 9.9 , 'PB' : 8.9 , 'MH' : 9.2}
+series = { 'GoT' : 9.4 , 'BB' : 9.5 , 'PB' : 8.9 , 'MH' : 9.2}
 print(series)
 series['GoT'] = 9.5
 print(series)

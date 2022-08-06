@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Testing JavaScript</title>
+    <script>
+      function display(element) {
+        console.log(element.alt);
+        console.log(element.id);
+      }
+      function display1(element) {
+        console.log(element.innerHTML);
+        console.log(element.class);
+      }
+    </script>
+  </head>
+  <body>
+    <img
+      src="images/flywheel.jpg"
+      alt="Frisbee"
+      id="img-1"
+      title="Frisbee"
+      onclick="console.log(this.alt)"
+    />
+    <div onclick="console.log(this.innerHTML)">Check out here</div>
+    <img
+      src="images/image-1.jpg"
+      alt="Image1"
+      title="Profile"
+      id="img2"
+      onclick="display(this)"
+    />
+    <div onclick="display1(this)" id="div2" class="div">Check out here</div>
+  </body>
+</html>

@@ -26,7 +26,7 @@ def main():
         r = int(input('Enter Red value : '))
         g = int(input('Enter Green value  : '))
         b = int(input('Enter Blue value : '))
-        if r >= 0 and r <= 100 and g >=0 and g<=100 and b>=0 and b<=100:
+        if r >= 0 and r <= 255 and g >=0 and g<=255 and b>=0 and b<=255:
            setColor(r, g, b)
         else:
             print('Invalid color input, Please check')
