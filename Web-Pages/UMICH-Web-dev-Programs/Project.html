@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>My First Project</title>
+        <link rel="stylesheet" href="CSS/Project.css">
+        <script>
+            function check(){
+                var x = document.getElementById('email-main');
+                var y = document.getElementById("email-repeat");
+                if(x.value != y.value){
+                    alert("Email does not match");
+                    return false;
+                }
+            }
+            function othersCheck(){
+                if(document.getElementById("others").checked){
+                    document.getElementById("others-text").style.display = "inline";
+                    document.getElementById("others-at").setAttribute("required", true);
+                }
+                else{
+                    document.getElementById("others-text").style.display = "none";
+                    document.getElementById("others-at").removeAttribute("required");
+                }
+            }
+        </script>
+    </head>
+    <body>
+    <header>
+        <h1>Krishna V</h1>
+        <nav>
+            <a href="#first" class="links">Foods</a><span> | </span>
+            <a href="#second" class="links">Achievements</a><span> | </span>
+            <a href="#third" class="links">About Me</a><span> | </span>
+            <a href="#four" class="links">About Page</a><span> | </span>
+            <a href="#five" class="links">Form</a><span> | </span>
+        </nav>
+    </header>
+    <section class="S1">
+        <a id="first"></a>
+        <h3>Favourite Foods</h3>
+        <ul>
+            <li>Dosa and Smabar</li>
+            <li>White Rice and Sambar</li>
+            <li>Biryani</li>
+            <li>Fried Rice</li>
+        </ul>
+    </section>
+    <section class="S2">
+        <a id="second"></a>
+        <h3>Achievements</h3>
+        <label for="p1" id="P1">Progress in this course (100%)</label>
+        <progress id="p1" value="100" max="100"></progress><br>
+        <label for="p2" id="P2">Progress in the Specialization capstone (20%)</label>
+        <progress id="p2" value="20" max="100"></progress><br>
+        <label for="p3" id="P3">Progress in life goals (10%)</label><br>
+        <progress id="p3" value="10" max="100"></progress><br>
+    </section>
+    <section class="S3">
+        <a id="third"></a>
+        <h3>More About Me</h3>
+        <details>
+            <summary id="summary">My Childhood</summary>
+            <div id="div">I grew up in a small village. I spent most of my childhood with my friend, 
+              Ajay and my brother. I miss Ajay now.</div>
+        </details>
+    </section>
+    <footer>
+        <a id="four"></a>
+        <h2>About the page</h2>
+        <figure><img src="http://www.intro-webdesign.com/images/newlogo.png" alt="WD4E Logo" title="WD4E Logo"></figure>
+        <span>This page was created by Krishna V & Colleen van Lent. To learn more about web design, visit<a href="http://www.intro-webdesign.com" target="_blank" id="link1">Intro to Web Design</a></span>
+    </footer> 
+    <section class="S4">
+        <a id="five"></a>
+       <h1>Form Designing using HTML</h1>
+        <form action="#">
+            <fieldset>
+                <legend>Personal Details</legend>
+                <table border="2">
+                    <tbody>
+                    <tr><td>First Name</td><td><label><input type="text" id="firstName" required pattern="[a-zA-Z]+"></label></td></tr>
+                    <tr><td>Last Name</td><td><label><input type="text" id="lastName" pattern="[a-zA-Z]+"></label></td></tr>
+                    <tr><td>Gender</td><td><label class="gender"><input type="radio" id="male" value="male" name="Gender" required onchange="othersCheck()">Male</label>
+                        <label class="gender"><input type="radio" id="female" value="female" name="Gender" onchange="othersCheck()">Female</label>
+                    <label class="gender"><input type="radio" id="others" value="Others" name="Gender" onchange="othersCheck()">Other</label>
+                <div id="others-text">
+                    <label for="others-at"></label>
+                    <input type="text" name="Gender" id="others-at" pattern="[a-zA-Z]{1, 15}">
+                </div></td></tr>
+                    <tr><td>Date of Birth</td><td><label><input type="date" id="dob" required></label></td></tr>
+                    <tr><td>Phone Number</td><td><label><input type="tel" id="phone" required pattern="[7-9][0-9]{10}"></label></td></tr>
+                    <tr><td>Address</td><td><label><textarea ="address" cols="30" rows="2" required></textarea></label></td></tr>
+                    <tr><td>E-mail</td><td><label><input type="email" name="email" id="email-main" placeholder="abc@abc.com" required></label></td></tr>
+                    <tr><td>Retype Email</td><td><label><input type="email" name="email" id="email-repeat" required onchange="check()"></label></td></tr>
+                    <tr><td>Zip Code</td><td><label><input type="text" pattern="[0-9]{6}" required></label></td></tr>
+                    <tr><td>Username</td><td><label><input type="text" id="Username" pattern="[a-zA-Z][0-9a-zA-Z_]{5, 15}" placeholder="Atleast 7 characters (a-z,A-Z,0-9)"></label></td></tr>
+                    <tr><td>Password</td><td><label><input type="password" id="Password" pattern="[0-9a-zA-Z]{8,15}"></label></td></tr>
+                </tbody>
+                </table><br>
+                <section class="submit">
+                <button type="submit" id="submit" value="Submit" onclick="return check()">Submit</button><button type="reset" id="reset" onclick="othersCheck()">Reset</button>
+                </section>
+            </fieldset>
+        </form>
+    </section> 
+    </body>
+</html>

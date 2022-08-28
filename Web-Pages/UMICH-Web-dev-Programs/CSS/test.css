@@ -1,0 +1,54 @@
+a[href$=".edu"]{
+    background-color: black;
+  }
+  
+  a[href*="wikipedia"]{
+    background-color: rgb(63, 159, 18);
+  }
+  
+  a[href=".gov"]{
+    background-color: rgb(190, 16, 16);
+  }
+  
+  .open{
+    background-color: rgb(39, 242, 16);
+  }
+
+  .closed{
+    background-color: rgb(255, 0, 0);
+  }
+  /*.Box1, .Box2{
+    color: rgb(0, 42, 255);
+    background-color: rgb(228, 204, 15);
+    box-sizing: border-box;
+    width: 49%;
+    display: inline-block;
+    height: 200px;
+    margin: 30px;
+    border: 20px double rgb(0, 0, 0);
+    padding: 15px;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  
+  h1{
+    text-align: center;
+  }
+  */
+  
+  /*@import url(//fonts.googleapis.com/css?family=Open+Sans);
+  
+  body {
+    background: #efefef;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 50px;
+  }
+  
+  h1 {
+    font-size: 30px;
+    line-height: 45px;
+  }*/
+  
+  

@@ -1,0 +1,65 @@
+body {
+  margin: 1%;
+  padding: 1%;
+  background-color: rgba(0, 0, 255, 0.2);
+  font-size: 100%;
+  min-width: 500px;
+}
+header {
+  background-color: #0066ff;
+  padding: 1%;
+  margin: 1%;
+}
+
+section {
+  margin: 1%;
+  padding: 1%;
+}
+
+nav a {
+  display: block;
+  background-color: white;
+  border: 1px solid black;
+  text-align: center;
+  border-radius: 35px;
+  text-decoration: none;
+  padding: 2%;
+  margin: 1%;
+}
+
+.myClass {
+  border: 1px solid black;
+  border-radius: 0.25%;
+  margin-bottom: 2%;
+  padding: 1% 1% 1% 1%;
+}
+
+ol {
+  list-style: upper-roman;
+  margin: 1em;
+}
+
+@media screen and (min-width: 500px){
+    h1:after {
+    content: " (I guess...)";
+  }
+}
+
+@media print {
+  h1 {
+    font-size: 1em;
+  }
+  img {
+    display: none;
+  }
+  nav a {
+    display: block;
+    background-color: white;
+    border: 0px !important;
+    text-align: center;
+    border-radius: 0px !important;
+    text-decoration: none;
+    padding: 0% !important;
+    margin: 0% !important;
+  }
+}

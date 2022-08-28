@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My first webpage</title>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="CSS/test.css">
+        <script>
+            function msg(name1){
+                document.getElementById("out").innerHTML=name1+" "+ "Event";
+            }
+            function displayDate(){
+                document.getElementById("date").innerHTML = Date();
+            }
+            function onOpen(){
+                var x = document.getElementById("demo")
+                x.style.display="block"
+                x.className="open"
+            }
+            function onClose(){
+                var x = document.getElementById("demo")
+                x.style.backgroundImage=URL
+                x.className="closed"
+            }
+        </script>
+        <!--<script src="js/test.js"></script>-->
+    </head>
+    <body onload="msg('Load')", onresize="msg('Resize')">
+        <h1 id="test" onclick="msg('Krishna')">My Profile</h1>
+        <div id="div" onclick="msg('Click')">I'm Krishna V<br>Electronics and Computer Engineer<br>Checkout my GitHub Page</div>
+        <p id="out"></p>
+        <button type="button" onclick="displayDate()" style="width: 8%; height: 30%;">Display Date</button>
+        <p id="date"></p>
+        <button type="button" onclick="document.getElementById('text').innerHTML='Fisrt button clicked'">First Button</button>
+        <button type="button" onclick="document.getElementById('text').innerHTML='Second button clicked'"">Second Button</button>
+        <p id="text">Check here</p>
+        <button type="button" onclick="onOpen()">Open</button>
+        <button type="button" onclick="onClose()">Close</button>
+        <p id="demo">This paragraph will disappear and appear as the button is getting clicked</p>
+   </body>
+</html>
